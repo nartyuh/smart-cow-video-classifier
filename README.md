@@ -1,1 +1,1 @@
-# Smart Cow Video Classifier
+# Smart Cow Video Quality Classifier
