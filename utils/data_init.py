@@ -215,8 +215,8 @@ def write(dataset, dst):
         else:
             raise
 
-
-src = input("Specify the source directory of cow videos: ")
-dst = input("Specify the destination directory to save as local dataset: ")
-split = input("Specify split proportion for train and test data (0.0 - 1.0): ") # for example, a split proportion of 0.6 means 60% train and 40% test
-build_local_dataset_storage(src, dst, float(split))
+build_local_dataset_storage(
+    input("Source dataset directory: "),
+    os.path.join(os.getcwd(), "resources", "data"),
+    float(input("Split proportion for train and test data (0.0 - 1.0): "))
+)
